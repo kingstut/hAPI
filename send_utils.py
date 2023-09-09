@@ -21,8 +21,7 @@ async def send_pattern_to_buzz(pattern):
 
 def send_pattern_to_iphone(pattern):
     # Convert the pattern to the format expected by your bridge/API
-    # For the sake of this example, let's assume it accepts the same pattern format
-    api_url = "http://localhost:5000/send-haptic"  # Replace with your API endpoint
+    api_url = "http://localhost:5000/send-haptic"  
     
     response = requests.post(api_url, json=pattern)
     
